@@ -7,11 +7,10 @@ import java.net.*;
 public class ProjectServer{
   //Main method
   public static void main(String args[]) throws java.rmi.RemoteException{
-  try{
-    CalculateSumServerImpl obj = new  CalculateSumServerImpl();
-    Naming.rebind("ProjectServer",obj);
-  }
- catch(Exception e)
- {}
- }   
+   try{
+     CalculateSumServerImpl obj = new  CalculateSumServerImpl();
+     Naming.rebind("ProjectServer",obj);
+   }
+   catch(Exception e) {}
+  }   
 }

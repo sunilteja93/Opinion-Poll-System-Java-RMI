@@ -13,13 +13,11 @@ public class ProjectClient{
       long n = Integer.parseInt(din.readLine());
       long r = oo.calculateSum(n);
       System.out.println("The sum of "+n+" is"+ r);
-   }
- catch(Exception e)
- {
-   System.out.println("Error in input!!!");
- }
- 
-}
-  
+    }
+    catch(Exception e)
+    {
+      System.out.println("Error in input!!!");
+    } 
+  }  
 }
 
